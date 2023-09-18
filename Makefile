@@ -5,9 +5,9 @@ SRCDIR = src
 OBJDIR = build
 BINDIR = bin
 
-SOURCES = $(wildcard $(SRCDIR)/*.cpp)
+SOURCES = $(wildcard $(SRCDIR)/*.h)
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
-TARGET = $(BINDIR)/my_program
+TARGET = $(BINDIR)/Test
 
 $(TARGET): $(OBJECTS)
 	    $(CC) $(CFLAGS) -o $@ $^
