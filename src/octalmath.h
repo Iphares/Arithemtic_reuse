@@ -5,28 +5,57 @@
 #include "helper.h"
 #include "math.h"
 
-// Function to subtract two Octal numbers
+/* ************************************ *
+ * Author:  Isiah Phares    	*
+ * Creation Date:  2023           	*
+ * 				  	*
+ *   DISCLAIMER!!!!!:  		  	*
+ *  The following methods are provided	*
+ *  to perform basic arithemtic of two octal numbers *
+ * ************************************ */
+
+
+/*
+  Procedure..: addOctal
+  Description..: Returns sum of two octal numbers in decimal form
+  Params..: std::string oct1, std::string oct2
+  Return..: double 
+*/
 double addOctal(std::string oct1, std::string oct2) 
 {
     // Perform addition
     return add<double>(octalToDecimal(oct1), octalToDecimal(oct2));
 }
 
-// Function to subtract two octal numbers
+/*
+  Procedure..: subtractOctal
+  Description..: Returns difference of two octal numbers in decimal form
+  Params..: std::string oct1, std::string oct2
+  Return..: double 
+*/
 double subtractOctal(std::string oct1, std::string oct2) 
 {
     // Perform subtraction
     return subtract<double>(octalToDecimal(oct1), octalToDecimal(oct2));
 }
 
-// Function to multiply two octal numbers
+/*
+  Procedure..: multiplyOctal
+  Description..: Returns quotient of two octal numbers in decimal form
+  Params..: std::string oct1, std::string oct2
+  Return..: double 
+*/
 double multiplyOctal(std::string oct1, std::string oct2) 
 {
     // Perform multiplication
     return multiply<double>(octalToDecimal(oct1), octalToDecimal(oct2));
 }
-
-// Function to divide two octal numbers
+/*
+  Procedure..: divideOctal
+  Description..: Returns quotient of two octal numbers in decimal form
+  Params..: std::string dividend, std::string divisor
+  Return..: double 
+*/
 double divideOctal(std::string dividend, std::string divisor) 
 {
     // Convert octal strings to decimal integers
@@ -42,4 +71,4 @@ double divideOctal(std::string dividend, std::string divisor)
     return divide<double>(decDividend, decDivisor);
 }
 
-#endif
+#endif //OCTALMATH_H

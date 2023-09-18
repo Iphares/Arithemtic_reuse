@@ -4,6 +4,20 @@
 #include "hexmath.h"
 #include "math.h"
 
+/* ************************************ *
+ * Author:  Isiah Phares    	*
+ * Creation Date:  2023           	*
+ * 				  	*
+ *   DISCLAIMER!!!!!:  		  	*
+ *  The following class provides a*
+ *  test case for verifying the arithemtic functions in this library*
+ * ************************************ */
+
+
+/*
+  Procedure..: Test each arithemitc routine
+  Description..: Prints the output of each test case to the console
+*/
 int main() 
 { 
     std::cout << " \n Testing algorithms \n";

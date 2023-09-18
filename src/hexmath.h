@@ -5,27 +5,58 @@
 #include "helper.h"
 #include "math.h"
 
-// Function to Add two hexadecimal numbers
+/* ************************************ *
+ * Author:  Isiah Phares    	*
+ * Creation Date:  2023           	*
+ * 				  	*
+ *   DISCLAIMER!!!!!:  		  	*
+ *  The following methods are provided	*
+ *  to perform basic arithemtic of two hexadecimal numbers *
+ * ************************************ */
+
+
+/*
+  Procedure..: addHexadecimal
+  Description..: Returns sum of two Hexadecimal numbers in decimal form
+  Params..: std::string hex1, std::string hex2
+  Return..: double 
+*/
 double addHexadecimal(std::string hex1, std::string hex2) 
 {
     // Perform addition
     return add<double>(hexToDecimal(hex1), hexToDecimal(hex2));
 }
 
+/*
+  Procedure..: subtractHexadecimal
+  Description..: Returns difference of two Hexadecimal numbers in decimal form
+  Params..: std::string hex1, std::string hex2
+  Return..: double 
+*/
 double subtractHexadecimal(std::string hex1, std::string hex2) 
 {
     // Perform subtraction
     return subtract<double>(hexToDecimal(hex1), hexToDecimal(hex2));
 }
 
-// Function to multiply two hexadecimal numbers
+/*
+  Procedure..: multiplyHexadecimal
+  Description..: Returns quotient of two Hexadecimal numbers in decimal form
+  Params..: std::string hex1, std::string hex2
+  Return..: double 
+*/
 double multiplyHexadecimal(std::string hex1, std::string hex2) 
 {
     // Perform multiplication
     return multiply(hexToDecimal(hex1), hexToDecimal(hex2));
 }
 
-// Function to divide two hexadecimal numbers
+/*
+  Procedure..: divideHexadecimal
+  Description..: Returns quotient two Hexadecimal numbers in decimal form
+  Params..: std::string dividend, std::string divisor
+  Return..: double 
+*/
 double divideHexadecimal(std::string dividend, std::string divisor) 
 {
     // Convert hexadecimal strings to decimal integers
@@ -41,4 +72,4 @@ double divideHexadecimal(std::string dividend, std::string divisor)
     return divide<double>(decDividend, decDivisor);
 }
 
-#endif
+#endif //HEXMATH_H
